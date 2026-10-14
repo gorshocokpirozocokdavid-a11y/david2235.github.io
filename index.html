@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин ВЕРА</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 ВЕРА</h1>
+    <p>Продуктовый магазин</p>
+    <button onclick="showCart()">
+      Корзина (<span id="count">0</span>)
+    </button>
+  </header>
+
+  <main>
+    
+<button onclick="openProducts()" class="products-button">
+  🛍️ Наши товары
+</button>
+
+<div id="productsSection">
+  <div class="products" id="products"></div>
+</div>
+
+    <section class="cart" id="cart">
+      <h2>Твоя корзина</h2>
+      <div id="cartItems">Корзина пуста</div>
+      <h3>Итого: <span id="total">0</span> грн</h3>
+
+      <label for="payment">Способ оплаты</label>
+      <select id="payment">
+        <option value="qr">Monobank — QR-код</option>
+        <option value="cash">Наличными при получении</option>
+      </select>
+
+      <button onclick="checkout()">Оформить заказ</button>
+    </section>
+
+    <section id="paymentBox" class="payment" hidden>
+      <h2>Оплата Monobank</h2>
+      <p>Отсканируй QR-код своим банковским приложением.</p>
+     <a
+  href="https://send.monobank.ua/jar/4938Hne1KE"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="monobank-button"
+>
+  💳 Оплатить через Monobank
+</a>
+      <p id="paymentTotal"></p>
+      <p class="warning">
+        После перевода обязательно проверь сумму и получателя.
+        Заказ считается оплаченным только после подтверждения платежа.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 Магазин «ВЕРА» 💚</footer>
+  <script src="script.js"></script>
+</body>
+</html>

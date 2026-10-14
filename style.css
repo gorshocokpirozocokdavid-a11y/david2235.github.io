@@ -1,0 +1,128 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #2bff00;
+  color: #26372b;
+}
+
+header {
+  text-align: center;
+  padding: 25px 15px;
+  background: #247443;
+  color: white;
+}
+
+header h1 {
+  font-size: 38px;
+  margin: 0;
+}
+
+main {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.product, .cart, .payment {
+  padding: 20px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px #00000010;
+}
+
+.product .emoji {
+  font-size: 42px;
+}
+
+.price {
+  font-size: 23px;
+  font-weight: bold;
+  color: #247443;
+}
+
+button, select {
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  background: #247443;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+button:hover {
+  background: #185832;
+}
+
+.cart, .payment {
+  margin-top: 25px;
+}
+
+.cart select {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccd8cc;
+  background: white;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.remove {
+  background: #b63838;
+}
+
+.payment img {
+  display: block;
+  width: min(100%, 380px);
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+.warning {
+  font-size: 14px;
+  color: #76551c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  padding: 25px;
+  background: #e1e9df;
+}
+.monobank-button {
+  display: inline-block;
+  background: #202020;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.monobank-button:hover {
+  background: #ee0000;
+}
